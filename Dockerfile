@@ -1,9 +1,9 @@
 FROM redhat/ubi8
 
-yum install python3 -y && pip install flask
+RUN yum install python3 -y
 
-COPY flaskApp.py /flaskApp.py
+COPY . .
+
+RUN python3 -m pip install -r requirements.txt
 
 CMD [ "python3", "flaskApp.py" ]
-
-
