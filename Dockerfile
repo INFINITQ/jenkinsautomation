@@ -1,6 +1,6 @@
 FROM redhat/ubi8
 
-RUN yum install python3 -y
+RUN yum install python3 -y && yum install httpd
 
 COPY . .
 
