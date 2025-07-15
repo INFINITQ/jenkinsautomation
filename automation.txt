@@ -1,0 +1,1 @@
+This is a git push if the jenkins runs automatically then CI/CD Is completely and prefectly setted up.
